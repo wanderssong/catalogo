@@ -331,9 +331,15 @@ h2 {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
+    .product-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .product {
-        width: calc(100% - 1rem);
-        margin: 0.5rem 0;
+        flex: 0 0 80%;
+        margin: 0.5rem 0.5rem 0.5rem 0;
     }
 
     .modal-content {
