@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo Online</h1>
+        <button id="cart-button">Carrinho</button>
+    </header>
+    
+    <main>
+        <div id="notification" class="notification"></div>
+
+        <section id="electronics">
+            <h2>Eletrônicos</h2>
+            <div class="product-container">
+                <div class="product" data-id="1" data-price="299.99" data-image2="https://http2.mlstatic.com/D_NQ_NP_2X_773505-MLU76857707215_062024-F.webp" data-image3="https://http2.mlstatic.com/D_NQ_NP_2X_653734-MLU75976358031_042024-F.webp">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_717420-MLU76857491441_062024-F.webp" alt="Produto 1">
+                    <p>Smart TV</p>
+                    <p>Preço: R$299,99</p>
+                    <p>Ref: 12345</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="2" data-price="199.99" data-image2="https://http2.mlstatic.com/D_NQ_NP_2X_623518-MLU76248790065_052024-F.webp" data-image3="https://http2.mlstatic.com/D_NQ_NP_2X_768819-MLU76248790077_052024-F.webp">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_872322-MLU76066556392_052024-F.webp" alt="Produto 2">
+                    <p>Laptop</p>
+                    <p>Preço: R$199,99</p>
+                    <p>Ref: 67890</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                
+            </div>
+        </section>
+        <section id="clothing">
+            <h2>Roupas</h2>
+            <div class="product-container">
+                <div class="product" data-id="4" data-price="49.99" data-image2="https://http2.mlstatic.com/D_NQ_NP_2X_814952-MLB77089305499_062024-F.webp" data-image3="https://http2.mlstatic.com/D_NQ_NP_2X_915259-MLB77088993177_062024-F.webp">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_775329-MLB76880867942_062024-F.webp" alt="Produto 4">
+                    <p>Descrição: Camiseta</p>
+                    <p>Preço: R$49,99</p>
+                    <p>Ref: 23456</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="5" data-price="89.99" data-image2="https://http2.mlstatic.com/D_NQ_NP_2X_880274-MLB50709321361_072022-F.webp" data-image3="https://http2.mlstatic.com/D_NQ_NP_2X_607930-MLB72293347876_102023-F.webp">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_673677-MLB50709321365_072022-F.webp" alt="Produto 5">
+                    <p>Jaqueta Motociclista Impermeável Texx Ronin Masculina</p>
+                    <p>Preço: R$89,99</p>
+                    <p>Ref: 78901</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section id="home-appliances">
+            <h2>Eletrodomésticos</h2>
+            <div class="product-container">
+                <div class="product" data-id="6" data-price="399.99" data-image2="" data-image3="">
+                    <img src="img/home1.jpg" alt="Produto 6">
+                    <p>Descrição: Aspirador de Pó</p>
+                    <p>Preço: R$399,99</p>
+                    <p>Ref: 34567</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="7" data-price="499.99" data-image2="" data-image3="">
+                    <img src="img/home2.jpg" alt="Produto 7">
+                    <p>Descrição: Geladeira</p>
+                    <p>Preço: R$499,99</p>
+                    <p>Ref: 89012</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section id="sports">
+            <h2>Esportes</h2>
+            <div class="product-container">
+                <div class="product" data-id="8" data-price="199.99" data-image2="" data-image3="">
+                    <img src="img/sports1.jpg" alt="Produto 8">
+                    <p>Descrição: Tênis de Corrida</p>
+                    <p>Preço: R$199,99</p>
+                    <p>Ref: 45678</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="9" data-price="299.99" data-image2="" data-image3="">
+                    <img src="img/sports2.jpg" alt="Produto 9">
+                    <p>Descrição: Bicicleta</p>
+                    <p>Preço: R$299,99</p>
+                    <p>Ref: 90123</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img class="carousel-img" src="" alt="Imagem do Produto 1">
+                    <img class="carousel-img" src="" alt="Imagem do Produto 2">
+                    <img class="carousel-img" src="" alt="Imagem do Produto 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <p id="modal-desc"></p>
+            <p id="modal-price"></p>
+            <button id="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <span id="cart-counter" class="cart-counter">0</span>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <form id="checkout-form">
+                <label for="customer-name">Nome:</label>
+                <input type="text" id="customer-name" required>
+                <label for="customer-address">Endereço:</label>
+                <input type="text" id="customer-address" required>
+                <label for="payment-method">Método de Pagamento:</label>
+                <select id="payment-method" required>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                </select>
+                <div id="installments" style="display:none;">
+                    <label for="installment-options">Parcelamento:</label>
+                    <select id="installment-options">
+                        <option value="1x">1x</option>
+                        <option value="2x">2x</option>
+                        <option value="3x">3x</option>
+                        <option value="4x">4x</option>
+                        <option value="5x">5x</option>
+                    </select>
+                    <p id="machine-fee">Observação: Parcelamento em cartão de crédito terá taxa da maquininha.</p>
+                </div>
+                <div id="cash-change" style="display:none;">
+                    <label for="change-for">Troco para:</label>
+                    <input type="text" id="change-for">
+                </div>
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Email: <a href="mailto:wanderssong545@gmail.com">wanderssong545@gmail.com</a></p>
+            <p>Telefone: <a href="tel:+556696967406">66 99696-7406</a></p>
+            <div class="social-media">
+                <a href="https://wa.me/5566996967406" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/wlimports_snp?igsh=MXE2cDZiN3F6b2xlZA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
