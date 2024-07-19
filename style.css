@@ -29,6 +29,7 @@ header {
     text-align: center;
     font-size: 18px;
 }
+
 .cart-counter {
     background-color: red;
     color: white;
@@ -74,18 +75,17 @@ section h2 {
     border: 1px solid #ddd;
     padding: 1rem;
     margin: 0.5rem;
-    width: calc(50% - 1rem);
+    width: calc(100% - 1rem);
     box-sizing: border-box;
 }
 
 .product img {
-    width: 580px; /* Defina a largura desejada */
-    height: 550px; /* Defina a altura desejada */
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner, mantendo a proporção */
-    border-radius: 5px; /* Opcional: bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: sombra para as imagens */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 
 .add-to-cart-btn {
     background-color: #000;
@@ -121,7 +121,7 @@ section h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     animation: fadeIn 0.3s ease-in-out;
 }
-/* Animação de fade in para o modal */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -181,7 +181,7 @@ section h2 {
     transition: color 0.3s ease;
 }
 
-close:hover,
+.close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
@@ -204,7 +204,6 @@ footer {
     color: #f00;
 }
 
-/* Estilos para o formulário de checkout */
 #checkout-form {
     display: flex;
     flex-direction: column;
@@ -257,7 +256,6 @@ footer {
     background-color: #333;
 }
 
-/* Estilos para os itens do carrinho */
 #cart-items {
     margin-bottom: 20px;
 }
@@ -266,6 +264,7 @@ footer {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 .cart-item {
     margin-bottom: 8px;
     padding: 8px;
@@ -294,7 +293,6 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-/* Estilos adicionais para o modal */
 h2 {
     margin-top: 0;
     font-size: 24px;
@@ -328,4 +326,58 @@ h2 {
 
 .social-icon:hover {
     color: #007bff;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .product {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .carousel-img {
+        max-height: 300px;
+    }
+
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .add-to-cart-btn, #cart-button {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    #checkout-form input,
+    #checkout-form select {
+        font-size: 14px;
+    }
+
+    #checkout-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .notification {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .cart-counter {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
