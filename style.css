@@ -354,7 +354,7 @@ h2 {
     }
 
     .product img {
-        width: 100%;
+        width: 80%;
         height: 150px;
         object-fit: cover;
         border-radius: 5px;
