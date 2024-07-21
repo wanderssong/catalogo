@@ -343,7 +343,7 @@ h2 {
     }
 
     .modal-content {
-        width: 80%;
+        width: 100%;
         padding: 30px;
         z-index: 9999;
         margin-top: 20%;
@@ -353,13 +353,7 @@ h2 {
         max-height: 300px;
     }
 
-    .product img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+    
 
     header, footer {
         padding: 0.5rem;
